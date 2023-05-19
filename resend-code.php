@@ -17,7 +17,7 @@ function resend_email_verify($name, $email, $verify_token)
 
     $mail->Host = 'smtp.gmail.com';
     $mail->Username = 'amasangkay15@gmail.com';
-    $mail->Password = 'rxsdyqcvybilyaso';
+    $mail->Password = 'daiqaboyavfzjkmc';
 
     $mail->SMTPSecure = "tls"; 
     $mail->Port = 587;
