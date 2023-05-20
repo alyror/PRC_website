@@ -65,7 +65,7 @@ if(isset($_POST['resend_btn']))
             }
             else
             {
-                $_SESSION['status'] = "Email already verified.";
+                $_SESSION['status'] = "Email is already verified.";
                 header("Location: resend-email-verification.php");
                 exit(0);
             }

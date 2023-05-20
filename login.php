@@ -33,7 +33,7 @@ include('includes/navbar.php');
                 <div class="card shadow">
                     <div class="card-header">
                         <div class="d-flex justify-content-center p-2">
-                            <img src="images/prc-logo.png" alt="PRC" width="150" height="130"></a>
+                            <img src="images/prc-logo.png" alt="PRC" width="150" height="150"></a>
                         </div>
                         <h5 class='text-center pt-2'style = "font-family:poppins">SIGN IN</h5>
                     </div>
@@ -56,6 +56,7 @@ include('includes/navbar.php');
                             </div>
                         </form>
                         <hr>
+                        
                         <h6>did not receive verification email? 
                         <a href="resend-email-verification.php">Resend</a></h6>
                     </div>
@@ -80,6 +81,13 @@ include('includes/navbar.php');
     {
         font-size: 0.7rem;
     }
+    body{
+        background-image: url("images/prc-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
 
 </style>
 

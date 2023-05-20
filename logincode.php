@@ -30,7 +30,7 @@ if(isset($_POST['login_btn']))
             }
             else
             {
-                $_SESSION['status'] = "Verify your email address first to login.";
+                $_SESSION['status'] = "Verify your email address first!";
                 header("Location: login.php");
                 exit(0);
             }
