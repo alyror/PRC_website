@@ -4,9 +4,9 @@
         text-align: center;
     }
     .h8{
-        font-family: "Roboto",Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-family: "poppins";
         text-align: center;
-        padding: 50px;
+
 
     }
 
@@ -45,17 +45,17 @@ include('includes/navbar.php');
                     <h4>Batangas Chapter</h4>
                     </div>
                     <div class="card-body">
-                        <p class = "h8">Hello! <?= $_SESSION['auth_user']['username']; ?> Do You Want to Learn More About Your Blood Type Compatibility</h8>
+                        <p class = "h8">Hello! <?= $_SESSION['auth_user']['username']; ?> Do you want to learn more about your blood type compatibility?</h8>
                         <br>
                         <!-- <h8 class = "h8">Email Address: <?= $_SESSION['auth_user']['email']; ?></h8> -->
                         <hr>
-                        <h2 class = "pt-2">Different types of bloods</h2>
+                        <h2>Different types of bloods</h2>
                         <img src="images/bloodtype.jpg" class="rounded mx-auto d-block" width = "799" height = "193" usemap="#image_map">
                         <map name="image_map">
-                        <area alt="bloodtype-AB" title="bloodtype-AB" href="https://www.redcrossblood.org/donate-blood/blood-types/ab-blood-type.html" coords="137,-17,78" shape="circle">
-                        <area alt="bloodtype-B" title="bloodtype-B" href="https://www.redcrossblood.org/donate-blood/blood-types/b-blood-type.html" coords="308,-16,80" shape="circle">
-                        <area alt="bloodtype-A" title="bloodtype-A" href="https://www.redcrossblood.org/donate-blood/blood-types/a-blood-type.html" coords="480,-17,79" shape="circle">
-                        <area alt="bloodtype-O" title="bloodtype-O" href="https://www.redcrossblood.org/donate-blood/blood-types/o-blood-type.html" coords="655,-16,81" shape="circle">
+                        <area alt="bloodtype-AB" title="bloodtype-AB" href="https://www.redcrossblood.org/donate-blood/blood-types/ab-blood-type.html" coords="138,104,88" shape="circle">
+                        <area alt="bloodtype-B" title="bloodtype-B" href="https://www.redcrossblood.org/donate-blood/blood-types/b-blood-type.html" coords="311,104,83" shape="circle">
+                        <area alt="bloodtype-A" title="bloodtype-A" href="https://www.redcrossblood.org/donate-blood/blood-types/a-blood-type.html" coords="489,104,88" shape="circle">
+                        <area alt="bloodtype-O" title="bloodtype-O" href="https://www.redcrossblood.org/donate-blood/blood-types/o-blood-type.html" coords="663,104,84" shape="circle">
                         </map>
 
                     </div>
