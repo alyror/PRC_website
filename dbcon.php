@@ -1,5 +1,5 @@
 <?php
 
-$con = mysqli_connect("localhost","root","","userforms");
+$con = mysqli_connect("localhost","root","","user-registration");
 
 ?>

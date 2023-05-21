@@ -16,14 +16,13 @@ function send_password_reset($get_name, $get_email, $token)
     $mail->SMTPAuth = true;
 
     $mail->Host = 'smtp.gmail.com';
-    $mail->Username = 'vergarajhoncarljanauary12002@gmail.com';
-    $mail->Password = 'gsnbkrgbbrfjmcti';
+    $mail->Username = 'amasangkay15@gmail.com';
+    $mail->Password = 'daiqaboyavfzjkmc';
 
     $mail->SMTPSecure = "tls"; 
     $mail->Port = 587;
 
-    $mail->setFrom('vergarajhoncarljanauary12002@gmail.com
-    ', "The Bohemian Cafe Reset Password");
+    $mail->setFrom('amasangkay15@gmail.com', "PRC Reset Password");
     $mail->addAddress($get_email);
 
     $mail->isHTML(true);
@@ -33,9 +32,8 @@ function send_password_reset($get_name, $get_email, $token)
     <h2>Hello</h2>
     <h3>You are receiving this email because we received a password reset request for your account</h3>
     <br/><br/>
-    <a href = 'http://localhost/final/password-change.php?token=$token&email=$email'>Click Me </a>
+    <a href = 'http://localhost/PRC_website/password-change.php?token=$token&email=$email'>Click Me </a>
     ";
-
 
     $mail->Body = $email_template;
     $mail->send();
