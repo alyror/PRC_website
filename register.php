@@ -25,7 +25,7 @@ include('includes/navbar.php');
                 <div class="card shadow">
                     <div class="card-header">
                         <div class="d-flex justify-content-center p-2">
-                            <img src="images/prc-logo.png" alt="PRC" width="150" height="150"></a>
+                          </a>
                         </div>
                         <h5 class='text-center pt-2'style = "font-family:poppins">Registration Form</h5>
                     </div>
@@ -68,15 +68,18 @@ include('includes/navbar.php');
         font-size: 0.9rem;
     }
     .btn{
-        background-color: #030154;
+        background-color: black;
     }
     body{
-        background-image: url("images/prc-bg.png");
+        background-image: url("images/bohe.jpg");
         background-position: center;
+         /* Add the blur effect */
+        height:100%;
+
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+ 
 </style>
 
 

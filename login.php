@@ -33,7 +33,7 @@ include('includes/navbar.php');
                 <div class="card shadow">
                     <div class="card-header">
                         <div class="d-flex justify-content-center p-2">
-                            <img src="images/prc-logo.png" alt="PRC" width="150" height="150"></a>
+                          </a>
                         </div>
                         <h5 class='text-center pt-2'style = "font-family:poppins">SIGN IN</h5>
                     </div>
@@ -48,9 +48,7 @@ include('includes/navbar.php');
                                 <label for="">Password</label>
                                 <input type="password" name = "password" class="form-control">
                             </div>
-                            <div class="form-group pb-4">
-                            <a href="password-reset.php" class = float-end> Forgot Password?</a>
-                            </div>
+                        
                             <div class="form-group d-flex justify-content-center">
                                 <button type = "submit" name = "login_btn" class = "btn btn-primary" aria-pressed="true">SIGN IN</button>
                             </div>
@@ -75,14 +73,14 @@ include('includes/navbar.php');
         font-size: 0.7rem;
     }
     .btn{
-        background-color: #030154;
+        background-color: black;
     }
     .float-end
     {
         font-size: 0.7rem;
     }
     body{
-        background-image: url("images/prc-bg.png");
+        background-image: url("images/bohe.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

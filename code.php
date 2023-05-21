@@ -17,23 +17,23 @@ function sendemail_verify($name,$email,$verify_token)
     $mail->SMTPAuth = true;
 
     $mail->Host = 'smtp.gmail.com';
-    $mail->Username = 'amasangkay15@gmail.com';
-    $mail->Password = 'daiqaboyavfzjkmc';
+    $mail->Username = 'vergarajhoncarljanauary12002@gmail.com';
+    $mail->Password = 'gsnbkrgbbrfjmcti';
 
     $mail->SMTPSecure = "tls"; 
     $mail->Port = 587;
 
-    $mail->setFrom('amasangkay15@gmail.com', "PRC CODE Verify");
+    $mail->setFrom('vergarajhoncarljanauary12002@gmail.com', "Bohemian Cafe Verification");
     $mail->addAddress($email);
 
     $mail->isHTML(true);
-    $mail->Subject = 'Email Verification from PRC batangas chapter';
+    $mail->Subject = 'Email Verification from The Bohemian Cafe';
 
     $email_template = "
-    <h2>You have Registered with Philippine Red Cross Batangas Chapter System</h2>
+    <h2>You have Registered with The Bohemian Cafe</h2>
     <h5>Verify your email address to Login with the below given link</h5>
     <br/><br/>
-    <a href = 'http://localhost/PRC_website/verify-email.php?token=$verify_token'>Click Me </a>
+    <a href = 'http://localhost/final/verify-email.php?token=$verify_token'>Click Me </a>
     ";
 
     $mail->Body = $email_template;
