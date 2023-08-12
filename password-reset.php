@@ -3,7 +3,7 @@ session_start();
 
 $page_title = "Password Reset Form";
 include('includes/header.php');
-include('includes/navbar.php'); 
+// include('includes/navbar.php'); 
 ?>
 
 <div class="py-5">
@@ -35,6 +35,9 @@ include('includes/navbar.php');
                             </div>
                             <div class="form-group mb-3">
                                 <button type = "submit" name = "password_reset_btn" class = "btn btn-primary">Send Password Reset</button>
+                            </div>
+                            <div class="form-group mb-3">
+                                
                             </div>
                         </form>
                     </div>
