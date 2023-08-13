@@ -80,11 +80,16 @@ include('includes/header.php');
         font-size: 0.7rem;
     }
     body{
-        background-image: url("images/prc-bg.png");
+        background-image: url("images/prc-logo-1.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+       
+
     }
+
+
+    
     .bubble-input {
             display: block;
             width: 100%;
