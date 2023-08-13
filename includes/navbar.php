@@ -32,16 +32,26 @@
                                         <a class="nav-link active" href="index.php" style="font-family:poppins">Home</a>
                                     </li>
                                     <?php } ?>
-                                    <li class="nav-item col-lg-7">
+                                    <li class="nav-item col-lg-7 h6">
                                         <a class="nav-link" href="dashboard.php" style="font-family:poppins">Dashboard</a>
                                     </li>
                                     <?php if (!isset($_SESSION['authenticated'])) : ?>
-                                        <li class="nav-item col-lg-7">
-                                            <a class="nav-link" href="register.php" style="font-family:poppins">Register</a>
-                                        </li>
-                                        <li class="nav-item col-lg-7">
-                                            <a class="nav-link" href="login.php" style="font-family:poppins">Login</a>
-                                        </li>
+                                        <?php if ($currentPage === 'register.php') { ?>
+                                            <li class="nav-item col-lg-7 h6">
+                                                <a class="nav-link active" href="register.php" style="font-family:poppins">Register</a>
+                                            </li>
+                                        <?php } else { ?>
+                                            <li class="nav-item col-lg-7 h6">
+                                                <a class="nav-link" href="register.php" style="font-family:poppins">Register</a>
+                                            </li><?php } ?>
+                                        <?php if ($currentPage === 'login.php') { ?>
+                                            <li class="nav-item col-lg-7 h6">
+                                                <a class="nav-link active" href="login.php" style="font-family:poppins">Login</a>
+                                            </li>
+                                        <?php } else { ?>
+                                            <li class="nav-item col-lg-7 h6">
+                                                <a class="nav-link" href="login.php" style="font-family:poppins">Login</a>
+                                            </li><?php } ?>
                                     <?php endif ?>
                                     <?php if (isset($_SESSION['authenticated'])) : ?>
                                         <div class="d-flex align-items-end flex-column">
@@ -61,6 +71,7 @@
     </div>
 
  <style>
+
 .header {
     background-color: #f2f2f2;
     padding: 10px 20px;
