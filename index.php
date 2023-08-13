@@ -11,7 +11,7 @@ if(isset($_SESSION['authenticated']))
 $page_title = "Login Form";
 include('includes/header.php');
 include_once 'submit.php';
-// include('includes/navbar.php'); 
+include('includes/navbar.php'); 
 ?>
 <div class="py-5">
     <div class="container">

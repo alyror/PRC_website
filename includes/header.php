@@ -23,7 +23,7 @@
 
 <body>
 
-<header >
+<!-- <header >
 <div class="container p-0 m-0">
     <div class="row  d-flex flex-row ">
         <div class="col-sm-1 logo">
@@ -89,6 +89,6 @@
         }
     }
 
-</style>
+</style> -->
 
 
