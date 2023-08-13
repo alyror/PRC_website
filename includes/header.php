@@ -37,6 +37,46 @@
                 BATANGAS CHAPTER
             </div>
         </div>
+
+        <div class="col-sm-5">
+        <nav class="navbar navbar-expand-lg navbar-dark" >
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                        <li class="nav-item col-md-5">
+                            <a class="nav-link active" href="index.php" style ="font-family:poppins;color:#030154">Home</a>
+                        </li>
+                        <li class="nav-item col-lg-7">
+                            <a class="nav-link " href="dashboard.php" style ="font-family:poppins; color:#030154">Dashboard</a>
+                        </li>
+                        <?php if(!isset($_SESSION['authenticated'])) : ?>
+                        <li class="nav-item col-lg-7">
+                            <a class="nav-link" href="register.php" style ="font-family:poppins;color:#030154">Register</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <a class="nav-link" href="login.php" style ="font-family:poppins;color:#030154">Login</a>
+                        </li>
+                        <?php endif ?>
+                        
+                        <?php if(isset($_SESSION['authenticated'])) : ?>
+                        <div class="d-flex align-items-end flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php"><img src="images/logout-logo.png" alt="logout" width="20" height="20"></a>
+                        </li></div>
+                        <?php endif ?>
+                    </ul>
+
+                </div>
+            </div>
+            </nav>
+        </div>
+
+
     </div>
 </div>
 
@@ -47,7 +87,7 @@
 
   
        header {
-            background-color: #f2f2f2; /* Header background color */
+            background-color: white; /* Header background color */
        padding: 10px 20px; /* Adjust padding for top and bottom */
 
             display: flex; /* Use flexbox for layout */
@@ -72,6 +112,8 @@
             font-weight: bold;
             color: #CF0006;font-family: "Poppins", sans-serif; 
         }
+
+
 
 </style>
 
