@@ -11,7 +11,7 @@ if(isset($_SESSION['authenticated']))
 $page_title = "Login Form";
 include('includes/header.php');
 include_once 'submit.php';
-// include('includes/navbar.php'); 
+include('includes/navbar.php'); 
 ?>
 <div class="py-5">
     <div class="container">
@@ -22,7 +22,7 @@ include_once 'submit.php';
                         <div class="container d-flex justify-content-center align-items-center mx-auto" style="min-height: 60vh;">
                             <div class="text-center">
                                 <img src="images/prc-logo.png" alt="PRC" width="150" height="150" class="img-fluid">
-                                <p class="pt-2 mb-0" style="font-family: poppins;">
+                                <p class="py-3 mb-0" style="font-family: poppins; font-size: 14px">
                                     Welcome to PRC Batangas! <br>
                                     Click the access website to continue.
                                 </p>

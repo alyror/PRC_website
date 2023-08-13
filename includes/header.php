@@ -23,7 +23,7 @@
 
 <body>
 
-<header >
+<!-- <header >
 <div class="container p-0 m-0">
     <div class="row  d-flex flex-row ">
         <div class="col-sm-1 logo">
@@ -44,13 +44,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-             
-   
-      
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
-                    
                         <li class="nav-item col-md-5">
                             <a class="nav-link active" href="index.php" style ="font-family:poppins;color:#030154">Home</a>
                         </li>
@@ -72,17 +69,9 @@
                             <a class="nav-link" href="logout.php"><img src="images/logout-logo.png" alt="logout" width="20" height="20"></a>
                         </li></div>
                         <?php endif ?>
-                  
                     </ul>
-                  
+
                 </div>
-
-        
-
-
-
-
-                
             </div>
             </nav>
         </div>
@@ -90,22 +79,16 @@
 
     </div>
 </div>
-
-
   </header>
 
 <style>
-
-  
        header {
-            background-color: white; /* Header background color */
-       padding: 10px 20px; /* Adjust padding for top and bottom */
-
+            background-color: #f2f2f2; /* Header background color */
+            padding: 10px 20px; /* Adjust padding for top and bottom */
             display: flex; /* Use flexbox for layout */
             align-items: center; /* Center vertically */
         }
     
-       
         .logo img {
             max-width: 60px; /* Adjust the max-width for the logo */
             height: auto; /* Maintain aspect ratio */
@@ -116,7 +99,8 @@
             font-size: 18px; /* Adjust font size */
             font-weight: bold; /* Apply bold styling */
             margin-bottom: 2px; /* Add space between texts */
-            color: #030154;font-family: "Poppins", sans-serif; 
+            color: #030154;
+            font-family: "Poppins", sans-serif; 
         }
         .chapter-text {
             font-size: 18px; /* Adjust font size for chapter text */
@@ -124,8 +108,27 @@
             color: #CF0006;font-family: "Poppins", sans-serif; 
         }
 
+    @media (max-width: 575.98px) {
+        .logo img {
+            max-width: 40px;
+            margin-right: 5px;
+        }
 
+        .logo-text, .chapter-text {
+            font-size: 16px;
+        }
+    }
 
-</style>
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        .logo img {
+            max-width: 50px;
+        }
+
+        .logo-text, .chapter-text {
+            font-size: 16px;
+        }
+    }
+
+</style> -->
 
 

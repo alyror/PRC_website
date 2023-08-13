@@ -20,7 +20,7 @@
 $page_title = "Dashboard Page";
 include('authentication.php');
 include('includes/header.php');
-//include('includes/navbar.php'); 
+include('includes/navbar.php'); 
 ?>
 
 <div class="py-5">

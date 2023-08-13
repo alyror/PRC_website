@@ -10,18 +10,18 @@ if(isset($_SESSION['authenticated']))
 
 $page_title = "Login Form";
 include('includes/header.php');
-// include('includes/navbar.php'); 
+include('includes/navbar.php'); 
 ?>
 
 <div class="py-5">
-    <div class="container">
+    <div class="container px-5">
         <div class="row justify-content-center">
             <div class="col-md-5">
 
                 <div class="card shadow">
                     <div class="card-header">
-                        <div class="d-flex justify-content-center p-2">
-                            <img src="images/prc-logo.png" alt="PRC" width="150" height="150" class="img-fluid max-size-image"></a>
+                        <div class="d-flex justify-content-center pt-5">
+                            <img src="images/prc-logo.png" alt="PRC" width="120" height="120" class="img-fluid max-size-image"></a>
                         </div>
                         <h5 class="text-center pt-2" style = "font-family:poppins">SIGN IN</h5>
                         
@@ -79,17 +79,13 @@ include('includes/header.php');
     {
         font-size: 0.7rem;
     }
-    body{
-        background-image: url("images/prc-logo-1.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-       
 
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('images/background.png') center/cover no-repeat;
     }
 
-
-    
     .bubble-input {
             display: block;
             width: 100%;
@@ -112,8 +108,10 @@ include('includes/header.php');
             font-family: 'Poppins', sans-serif;
             font-size: 12px;
         }
-    
 
+        .card{
+            border-radius: 20px;
+        }
 </style>
 
 

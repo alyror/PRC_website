@@ -2,7 +2,7 @@
 session_start();
 $page_title = "Registration Form";
 include('includes/header.php');
-// include('includes/navbar.php'); 
+include('includes/navbar.php'); 
 ?>
 
 <div class="py-3">
@@ -73,18 +73,22 @@ include('includes/header.php');
     .btn{
         background-color: #030154;
     }
-    body{
-        background-image: url("images/prc-bg.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('images/background.png') center/cover no-repeat;
     }
+
     .container1 {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         padding: 70px;
-}
+    }
+    .card{
+        border-radius: 20px;
+    }
 
 @media (max-width: 992px) {
     .container1{
