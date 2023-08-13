@@ -12,7 +12,7 @@ $page_title = "Login Form";
 include('includes/header.php');
 // include('includes/navbar.php'); 
 ?>
-<div class="background-overlay"></div>
+
 <div class="py-5">
     <div class="container px-5">
         <div class="row justify-content-center">
@@ -83,17 +83,7 @@ include('includes/header.php');
     body {
         margin: 0;
         padding: 0;
-        overflow: hidden;
-    }
-
-    .background-overlay {
         background: url('images/background.png') center/cover no-repeat;
-        position: fixed;
-        top: 130px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        
     }
 
     .bubble-input {
@@ -122,8 +112,6 @@ include('includes/header.php');
         .card{
             border-radius: 20px;
         }
-    
-
 </style>
 
 

@@ -39,22 +39,16 @@
         </div>
     </div>
 </div>
-
-
   </header>
 
 <style>
-
-  
        header {
             background-color: #f2f2f2; /* Header background color */
-       padding: 10px 20px; /* Adjust padding for top and bottom */
-
+            padding: 10px 20px; /* Adjust padding for top and bottom */
             display: flex; /* Use flexbox for layout */
             align-items: center; /* Center vertically */
         }
     
-       
         .logo img {
             max-width: 60px; /* Adjust the max-width for the logo */
             height: auto; /* Maintain aspect ratio */
@@ -65,13 +59,35 @@
             font-size: 18px; /* Adjust font size */
             font-weight: bold; /* Apply bold styling */
             margin-bottom: 2px; /* Add space between texts */
-            color: #030154;font-family: "Poppins", sans-serif; 
+            color: #030154;
+            font-family: "Poppins", sans-serif; 
         }
         .chapter-text {
             font-size: 18px; /* Adjust font size for chapter text */
             font-weight: bold;
             color: #CF0006;font-family: "Poppins", sans-serif; 
         }
+
+    @media (max-width: 575.98px) {
+        .logo img {
+            max-width: 40px;
+            margin-right: 5px;
+        }
+
+        .logo-text, .chapter-text {
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        .logo img {
+            max-width: 50px;
+        }
+
+        .logo-text, .chapter-text {
+            font-size: 16px;
+        }
+    }
 
 </style>
 
