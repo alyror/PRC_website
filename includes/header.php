@@ -44,10 +44,13 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-
+             
+   
+      
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                    
                         <li class="nav-item col-md-5">
                             <a class="nav-link active" href="index.php" style ="font-family:poppins;color:#030154">Home</a>
                         </li>
@@ -69,9 +72,17 @@
                             <a class="nav-link" href="logout.php"><img src="images/logout-logo.png" alt="logout" width="20" height="20"></a>
                         </li></div>
                         <?php endif ?>
+                  
                     </ul>
-
+                  
                 </div>
+
+        
+
+
+
+
+                
             </div>
             </nav>
         </div>
