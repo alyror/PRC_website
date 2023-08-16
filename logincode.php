@@ -24,7 +24,7 @@ if(isset($_POST['login_btn']))
                     'email' => $row['email']
                 ];
                 $_SESSION['status'] = "Logged in successfully!";
-                header("Location: dashboard.php");
+                header("Location: branches.php");
                 exit(0);
 
             }

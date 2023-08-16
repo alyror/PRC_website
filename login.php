@@ -4,7 +4,7 @@ session_start();
 if(isset($_SESSION['authenticated']))
 {
     $_SESSION['status'] = "You are already logged in";
-    header('Location: dashboard.php');
+    header('Location: branches.php');
     exit(0);
 }
 
@@ -41,15 +41,17 @@ include('includes/navbar.php');
                         <form action="logincode.php" method = "POST">
 
                             <div class="form-group mb-2">
-                                <label for="">Email Address</label>
+                                <label class="labels" for="">Email Address</label>
                                 <input type="email" class = "bubble-input" name = "email" class="form-control" required>
                                 
                             </div>
                             <div class="form-group mb-3">
-                                <label for="">Password</label>
-                                <input type="password" class = "bubble-input" minlength="8" name = "password" class="form-control" required>
+                                <label class="labels" for="">Password</label>
+                                <input type="password" id="passwordInput" class = "bubble-input" minlength="8" name = "password" class="form-control" required>
                             </div>
                             <div class="form-group pb-4" style= "font-family:poppins;">
+                            <input type="checkbox" id="showPasswordToggle">
+                            <label class="form-check-label" for="showPasswordToggle">Show Password</label>
                             <a href="password-reset.php" class= float-end> Forgot Password?</a>
                             
                             </div>
@@ -68,7 +70,12 @@ include('includes/navbar.php');
 </div>
 
 <style>
-    label{
+    .form-check-label{
+        font-family: "poppins";
+        font-size: 0.8rem;
+    }
+
+    .labels{
         font-family: "poppins";
         font-size: 0.9rem;
     }
@@ -113,6 +120,21 @@ include('includes/navbar.php');
             border-radius: 20px;
         }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const passwordInput = document.getElementById('passwordInput');
+    const showPasswordToggle = document.getElementById('showPasswordToggle');
+
+    showPasswordToggle.addEventListener('change', function() {
+        if (this.checked) {
+            passwordInput.type = 'text';
+        } else {
+            passwordInput.type = 'password';
+        }
+    });
+});
+</script>
 
 
 <?php include('includes/footer.php'); ?>
