@@ -7,7 +7,7 @@
                             <div class="col-sm-1 logo">
                                 <a class="navbar-brand" href="#"><img src="images/prc-logo.png" class="img-fluid" alt="PRC Logo"></a>
                             </div>
-                            <div class="col-sm-4 containertext">
+                            <div class="col-sm-3 containertext">
                                 <div class="logo-text">
                                     PHILIPPINE RED CROSS
                                 </div>
@@ -120,6 +120,8 @@
             font-size: 12px;
         }
     }
-
+    .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 3px solid red;
+}
 
 </style>

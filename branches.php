@@ -8,25 +8,12 @@ if(isset($_SESSION['authenticated']))
     exit(0);
 }
 
-$page_title = "Login Form";
+$page_title = "branches";
 include('includes/header.php');
 include('includes/navbar.php'); 
 ?>
       <style>
-    /* Your custom grid CSS */
-    .parent {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-    }
-
-    .div1 { grid-area: 1 / 1 / 2/ 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .div3 { grid-area: 2 / 1 / 3 / 2; }
-    .div4 { grid-area: 2 / 2 / 3 / 3; }
-    .div5 { grid-area: 1 / 3 / 3 / 4; }
+  
 
     /* Additional Bootstrap classes */
     .card {
@@ -35,9 +22,10 @@ include('includes/navbar.php');
       box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       margin: 10px;
-
+    
     }
-
+    
+   
     .card-header {
       font-size: 18px;
       font-weight: bold;
@@ -49,53 +37,80 @@ include('includes/navbar.php');
 
    background-color: #030154;;
     }
+
+
+    @media (max-width: 991px) {
+      .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+      }
+    }
+
+    @media (max-width: 767px) {
+    
+      .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+   
+    }
   </style>
-  <title>Card Layout</title>
+
 </head>
 <body>
-<div class="container">
-  <div class="parent">
-    <div class="div1 card text-center rounded">
-      <div class="card-header">
-        PRC Batangas
-      </div>
-      <div class="card-body">
-        <button class="btn btn-primary mt-3">Connect</button>
-      </div>
-    </div>
-    <div class="div2 card text-center rounded">
-      <div class="card-header">
-        PRC Lipa
-      </div>
-      <div class="card-body">
-        <button class="btn btn-primary mt-3">Connect</button>
-      </div>
-    </div>
-    <div class="div3 card text-center rounded">
-      <div class="card-header">
-        PRC Nasugbu
-      </div>
-      <div class="card-body">
-        <button class="btn btn-primary mt-3">Connect</button>
-      </div>
-    </div>
-    <div class="div4 card text-center rounded">
-      <div class="card-header">
-        PRC Tanauan
-      </div>
-      <div class="card-body">
-        <button class="btn btn-primary mt-3">Connect</button>
-      </div>
-    </div>
-    <div class="div5 card text-center rounded">
-      <div class="card-header">
-   
-
-
-      </div>
-      <div class="card-body">
-      <img src = "images/prc-logo.png">
-      </div>
-    </div>
-  </div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card  text-center">
+				<h5 class="card-header">
+					PRC Batangas
+				</h5>
+				<div class="card-body">
+        <button class="btn btn-primary">Connect</button> <!-- Add the button element -->
+				</div>
+				
+			</div>
+			<div class="card text-center">
+				<h5 class="card-header">
+				PRC Lipa
+				</h5>
+				<div class="card-body">
+        <button class="btn btn-primary">Connect</button> <!-- Add the button element -->
+				</div>
+			
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card text-center">
+				<h5 class="card-header">
+				PRC Nasugbu
+				</h5>
+				<div class="card-body">
+        <button class="btn btn-primary">Connect</button> <!-- Add the button element -->
+				</div>
+			
+			</div>
+			<div class="card text-center">
+				<h5 class="card-header">
+		PRC Tanauan
+				</h5>
+				<div class="card-body">
+        <button class="btn btn-primary">Connect</button> <!-- Add the button element -->
+				</div>
+			
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card text-center">
+				<h5 class="card-header">
+				
+				</h5>
+				<div class="card-body">
+					tite
+				</div>
+			
+			</div>
+		</div>
+	</div>
 </div>
