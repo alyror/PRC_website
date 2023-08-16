@@ -52,7 +52,7 @@ include('includes/navbar.php');
                                 <label for="">Confirm Password</label>
                                 <input type="text" name = "repassword" class="form-control">
                             </div> -->
-                            <div class="form-group d-flex justify-content-center">
+                            <div class="form-group d-flex justify-content-center pb-4">
                                 <button type = "submit" name = "register_btn" class = "btn btn-primary">SIGN UP</button>
                             </div>
                         </form>

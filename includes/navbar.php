@@ -18,7 +18,7 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse pt-3" id="navbarSupportedContent">
                                 <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
                                     <?php
                                     $currentPage = basename($_SERVER['PHP_SELF']);
@@ -74,27 +74,27 @@
 
 .header {
     background-color: #f2f2f2;
-    padding: 10px 20px;
+    padding: 1px 5px;
     display: flex;
     align-items: center;
 }
 
 .navbar-brand img {
-    max-width: 60px;
+    max-width: 50px;
     height: auto;
     margin-right: 10px;
 }
 
 .logo-text {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     color: #030154;
     font-family: "Poppins", sans-serif;
 }
 
 .chapter-text {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     color: #CF0006;
     font-family: "Poppins", sans-serif;
