@@ -7,7 +7,7 @@
                             <div class="col-sm-1 logo">
                                 <a class="navbar-brand" href="#"><img src="images/prc-logo.png" class="img-fluid" alt="PRC Logo"></a>
                             </div>
-                            <div class="col-sm-4 containertext">
+                            <div class="col-sm-3 containertext">
                                 <div class="logo-text">
                                     PHILIPPINE RED CROSS
                                 </div>
@@ -18,7 +18,7 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse pt-4" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse p-auto" id="navbarSupportedContent">
                                 <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
                                     <?php
                                     $currentPage = basename($_SERVER['PHP_SELF']);
@@ -120,6 +120,8 @@
             font-size: 12px;
         }
     }
-
+    .navbar-nav .nav-item .nav-link.active {
+  border-bottom: 3px solid red;
+}
 
 </style>
