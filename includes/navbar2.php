@@ -32,12 +32,10 @@
                                 <li class="nav-item">
                                 <a class="nav-link" href="#">Track</a>
                                 </li>
-                          
                                       
                                             <li class="nav-item">
                                                 <a class="nav-link" href="logout.php"><img src="images/logout-logo.png" alt="logout" width="20" height="20"></a>
                                             </li>
-                            
                             </ul>
                             </div>
                         </div>
@@ -46,8 +44,7 @@
             </div>
         </div>
     </div>
-
- <style>
+<style>
     .header {
         background-color: #f2f2f2;
         padding: 1px 5px ;  
@@ -112,7 +109,4 @@
       margin-right: 30px;
       font-size: 0.8rem;
     }
-
-
-
-</style>
+</style> 
