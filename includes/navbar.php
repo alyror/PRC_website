@@ -18,52 +18,54 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse pt-3" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse pt-auto" id="navbarSupportedContent">
                                 <ul class="navbar-nav mx-auto mb-3 mb-lg-0 p-auto">
                                     <?php
                                     $currentPage = basename($_SERVER['PHP_SELF']);
                                     if ($currentPage !== 'index.php') {
                                 ?>
-                                    <?php
+                                    <!-- <?php
                                             $currentPage = basename($_SERVER['PHP_SELF']);
                                             if ($currentPage !== 'login.php' && $currentPage !=='register.php' && $currentPage !=='branches.php' ) {
                                         ?>
-                                    <li class="nav-item col-md-5 p-auto d-flex justify-content-cente align-items-center">
+                                    <li class="nav-item">
                                         <a class="nav-link active" href="index.php" style="font-family:poppins">Home</a>
                                     </li>
-                                    <?php } ?>
+                                    <?php } ?> -->
                                     <?php if ($currentPage === 'branches.php') { ?>                    
-                                    <li class="nav-item col-lg-7 h6 d-flex justify-content-cente align-items-center">
+                                    <li class="nav-item">
                                         <a class="nav-link active" href="branches.php" style="font-family:poppins">Branches</a>
                                     </li>
                                     
                                     
-                                    <li class="nav-item col-lg-7 h6 d-flex justify-content-cente align-items-center">
+                                    <li class="nav-item">
                                         <a class="nav-link" href="dashboard.php" style="font-family:poppins">Dashboard</a>
                                     </li>
 
                                     <?php } else { ?>
-                                            <li class="nav-item col-lg-7 h6 d-flex justify-content-cente align-items-center">
+                                            <li class="nav-item">
                                                 <a class="nav-link" href="branches.php" style="font-family:poppins">Branches</a>
                                             </li><?php } ?>
                                     
                                     <?php if (!isset($_SESSION['authenticated'])) : ?>
-                                        <?php if ($currentPage === 'register.php') { ?>
-                                            <li class="nav-item col-lg-7 h6 d-flex justify-content-cente align-items-center">
-                                                <a class="nav-link active" href="register.php" style="font-family:poppins">Register</a>
-                                            </li>
-                                        <?php } else { ?>
-                                            <li class="nav-item col-lg-7 h6 d-flex justify-content-cente align-items-center">
-                                                <a class="nav-link" href="register.php" style="font-family:poppins">Register</a>
-                                            </li><?php } ?>
                                         <?php if ($currentPage === 'login.php') { ?>
-                                            <li class="nav-item col-lg-7 h6 d-flex justify-content-cente align-items-center">
+                                            <li class="nav-item ">
                                                 <a class="nav-link active" href="login.php" style="font-family:poppins">Login</a>
                                             </li>
                                         <?php } else { ?>
-                                            <li class="nav-item col-lg-7 h6 d-flex justify-content-cente align-items-center">
+                                            <li class="nav-item">
                                                 <a class="nav-link" href="login.php" style="font-family:poppins">Login</a>
                                             </li><?php } ?>
+
+                                        <!-- <?php if ($currentPage === 'register.php') { ?>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="register.php" style="font-family:poppins">Register</a>
+                                            </li>
+                                        <?php } else { ?>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="register.php" style="font-family:poppins">Register</a>
+                                            </li><?php } ?> -->
+                                        
                                     <?php endif ?>
                                     <?php if (isset($_SESSION['authenticated'])) : ?>
                                         <div class = "d-flex "><!-- justify-content-end -->
@@ -133,7 +135,15 @@
         }
     }
     .navbar-nav .nav-item .nav-link.active {
-  border-bottom: 3px solid red;
-}
+        border-bottom: 3px solid red;
+    }
+    
+    .navbar-nav .nav-link {
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      margin-right: 30px; 
+      font-size: 0.8rem;
+    }
 
 </style>

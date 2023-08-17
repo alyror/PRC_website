@@ -42,7 +42,7 @@ include('includes/navbar.php');
 
                             <div class="form-group mb-2">
                                 <label class="labels" for="">Email Address</label>
-                                <input type="email" class = "bubble-input" name = "email" class="form-control" required>
+                                <input type="text" class = "bubble-input" name = "text" class="form-control" required>
                                 
                             </div>
                             <div class="form-group mb-3">
@@ -59,9 +59,9 @@ include('includes/navbar.php');
                                 <button type = "submit" name = "login_btn" class = "btn btn-primary" aria-pressed="true">SIGN IN</button>
                             </div>
                         </form>
-                        <hr>
+
                         
-                        <h6 style = "font-family:poppins; font-size: 0.8rem; text-align= center;">Create an account? <a href="register.php">Sign up</a></h6>
+                        <!-- <h6 style = "font-family:poppins; font-size: 0.8rem; text-align= center;">Create an account? <a href="register.php">Sign up</a></h6> -->
                     </div>
                 </div>
             </div>

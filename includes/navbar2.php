@@ -1,13 +1,13 @@
 <div class="header">
-        <div class="container m-auto custom-container ">
+        <div class="container m-auto">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f2f2f2;">
-                        <div class="container-fluid header-container">
+                        <div class="container-fluid">
                             <div class="col-sm-1 logo">
                                 <a class="navbar-brand" href="#"><img src="images/prc-logo.png" class="img-fluid" alt="PRC Logo"></a>
                             </div>
-                            <div class="col-sm-3 container-text">
+                            <div class="col-sm-4 container-text">
                                 <div class="logo-text">
                                     PHILIPPINE RED CROSS
                                 </div>
@@ -48,34 +48,31 @@
     </div>
 
  <style>
+    .header {
+        background-color: #f2f2f2;
+        padding: 1px 5px ;  
+        display: flex;
+        align-items:center;
 
-.header {
-    background-color: #f2f2f2;
-    padding: 10px 20px ;
-  
-    display: flex;
-    align-items:center;
-
-}
+    }
 
 .navbar-brand img {
-    max-width: 60px;
+    max-width: 50px;
     height: auto;
     margin-right: 10px;
 }
 
 .logo-text {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    margin-bottom: 2px;
-
+    margin-bottom: 1px;
     color: #030154;
     font-family: "Poppins", sans-serif;
 }
 
 
 .chapter-text {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 
     color: #CF0006;
@@ -111,8 +108,9 @@
     .navbar-nav .nav-link {
       font-family: 'Poppins', sans-serif;
       font-weight: bold;
-      padding: 0.5rem 1rem; /* Add padding to the links */
-      margin-right: 30px; /* Add margin between the links */
+      padding: 0.5rem 1rem;
+      margin-right: 30px;
+      font-size: 0.8rem;
     }
 
 
